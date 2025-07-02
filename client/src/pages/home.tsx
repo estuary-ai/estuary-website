@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Navigation } from "@/components/navigation";
 import { EstuaryLogo, EstuaryLogoSimple } from "@/components/logo";
 import { AnimatedBackground } from "@/components/animated-background";
@@ -17,6 +17,30 @@ import {
 } from "lucide-react";
 
 export default function Home() {
+  // OS detection for download button
+  const getOS = () => {
+    const { userAgent, platform } = window.navigator;
+    if (/Mac/i.test(platform)) return "mac";
+    if (/Win/i.test(platform)) return "windows";
+    return "other";
+  };
+
+  const [os, setOS] = useState<string>("other");
+
+  useEffect(() => {
+    setOS(getOS());
+  }, []);
+
+  const handleDownload = () => {
+    if (os === "mac") {
+      window.location.href = "https://example.com/estuary-mac.dmg"; // Replace with real macOS installer URL
+    } else if (os === "windows") {
+      window.location.href = "https://example.com/estuary-windows.exe"; // Replace with real Windows installer URL
+    } else {
+      alert("Installer is only available for macOS and Windows.");
+    }
+  };
+
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -225,30 +249,18 @@ export default function Home() {
             
             <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-xl">
               <CardContent className="p-8">
-                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <div className="flex flex-col gap-6 justify-center items-center">
                   <Button 
                     size="lg"
                     className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group"
+                    onClick={handleDownload}
                   >
-                    <Apple className="h-6 w-6 mr-3 group-hover:animate-bounce" />
-                    <div className="text-left">
-                      <div className="text-sm opacity-90">Download for</div>
-                      <div className="text-lg font-bold">macOS</div>
-                    </div>
-                  </Button>
-                  
-                  <Button 
-                    size="lg"
-                    className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group"
-                  >
-                    <WindowsIcon className="h-6 w-6 mr-3 group-hover:animate-bounce" />
-                    <div className="text-left">
-                      <div className="text-sm opacity-90">Download for</div>
-                      <div className="text-lg font-bold">Windows</div>
-                    </div>
+                    <Download className="h-6 w-6 mr-3 group-hover:animate-bounce" />
+                    <span className="text-base font-semibold">
+                      Download for {os === "mac" ? "macOS" : os === "windows" ? "Windows" : "your OS"}
+                    </span>
                   </Button>
                 </div>
-                
                 <div className="mt-6 text-sm text-estuary-sage">
                   System requirements: macOS 12+ or Windows 10+, 8GB VRAM (Windows) or 16GB unified memory (macOS) recommended
                 </div>
