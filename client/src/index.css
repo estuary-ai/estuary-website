@@ -169,6 +169,49 @@
   background-position: center;
 }
 
+/* Wave divider shapes */
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+/* Section backgrounds */
+.section-cream {
+  background: linear-gradient(135deg, #FBF6E3 0%, #F8F3DF 100%);
+}
+
+.section-sage {
+  background: linear-gradient(135deg, #CAC6B1 0%, #C7C3AE 100%);
+}
+
 /* Estuary custom utility classes */
 .text-estuary-cream { color: var(--estuary-cream); }
 .text-estuary-teal { color: var(--estuary-teal); }
