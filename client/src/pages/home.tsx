@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Navigation } from "@/components/navigation";
 import { EstuaryLogo, EstuaryLogoSimple } from "@/components/logo";
 import { AnimatedBackground } from "@/components/animated-background";
-import { WaveDivider } from "@/components/wave-divider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -82,7 +81,6 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#CAC6B1" />
       </section>
 
       {/* Key Principles Section */}
@@ -136,7 +134,6 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#FBF6E3" />
       </section>
 
       {/* Features Section */}
@@ -213,7 +210,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#CAC6B1" />
       </section>
 
       {/* Download Section */}
@@ -224,7 +220,7 @@ export default function Home() {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-estuary-sage mb-12 max-w-2xl mx-auto">
-              Download Estuary today and start building your private AI agent. Available for Mac and PC with easy setup.
+              Download Estuary today and start building your private AI agent. Available on Mac and PC.
             </p>
             
             <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-xl">
@@ -260,7 +256,6 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#FBF6E3" />
       </section>
 
       {/* Footer */}
