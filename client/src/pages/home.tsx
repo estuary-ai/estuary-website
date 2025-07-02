@@ -55,13 +55,13 @@ export default function Home() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-estuary-text mb-6 leading-tight">
-            Private AI Agents
+            Estuary
           </h1>
           <p className="text-xl md:text-2xl text-estuary-sage mb-8 font-light">
             Squarespace for private, embodied AI agents
           </p>
           <p className="text-lg text-estuary-text mb-12 max-w-2xl mx-auto leading-relaxed">
-            Build, download, and run personal AI agents with user-definable skills and personas on your own device. Privacy-first, offline-capable, spatially-aware companionship AI.
+            Build, download, and run personal AI agents with user-definable skills and personas on your own device. Get started now for free!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -254,7 +254,7 @@ export default function Home() {
                 </div>
                 
                 <div className="mt-6 text-sm text-estuary-sage">
-                  System requirements: macOS 11+ or Windows 10+, 8GB RAM recommended
+                  System requirements: macOS 12+ or Windows 10+, 8GB VRAM (Windows) or 16GB unified memory (macOS) recommended
                 </div>
               </CardContent>
             </Card>
@@ -281,7 +281,7 @@ export default function Home() {
           
           <div className="text-center mt-8 pt-8 border-t border-estuary-sage/20">
             <p className="text-estuary-sage">
-              © 2024 Estuary. Building the future of private, embodied AI.
+              © 2025 Estuary. You Data. Your Device. Your AI.
             </p>
           </div>
         </div>
