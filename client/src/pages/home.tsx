@@ -82,7 +82,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="hsl(174, 20%, 85%)" />
+        <WaveDivider direction="bottom" color="#CAC6B1" />
       </section>
 
       {/* Key Principles Section */}
@@ -136,11 +136,11 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="hsl(180, 25%, 90%)" />
+        <WaveDivider direction="bottom" color="#FBF6E3" />
       </section>
 
       {/* Features Section */}
-      <section id="features" className="relative section-teal-light py-20 px-4">
+      <section id="features" className="relative section-cream py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
@@ -213,11 +213,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="hsl(0, 0%, 100%)" />
+        <WaveDivider direction="bottom" color="#CAC6B1" />
       </section>
 
       {/* Download Section */}
-      <section id="download" className="relative section-white py-20 px-4">
+      <section id="download" className="relative section-sage py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
@@ -260,11 +260,11 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="hsl(174, 20%, 85%)" />
+        <WaveDivider direction="bottom" color="#FBF6E3" />
       </section>
 
       {/* Footer */}
-      <footer className="relative section-sage py-12 px-4">
+      <footer className="relative section-cream py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">

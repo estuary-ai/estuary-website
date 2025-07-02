@@ -34,7 +34,7 @@ export default function Team() {
             </Card>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="hsl(174, 20%, 85%)" />
+        <WaveDivider direction="bottom" color="#CAC6B1" />
       </section>
 
       {/* Footer */}
