@@ -1,16 +1,17 @@
 import { Navigation } from "@/components/navigation";
 import { AnimatedBackground } from "@/components/animated-background";
+import { WaveDivider } from "@/components/wave-divider";
 import { EstuaryLogoSimple } from "@/components/logo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users } from "lucide-react";
 
 export default function Team() {
   return (
-    <div className="nature-bg min-h-screen overflow-x-hidden">
+    <div className="min-h-screen overflow-x-hidden">
       <AnimatedBackground />
       <Navigation />
       
-      <section className="relative z-10 py-20 px-4">
+      <section className="relative section-cream py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
@@ -33,10 +34,11 @@ export default function Team() {
             </Card>
           </div>
         </div>
+        <WaveDivider direction="bottom" color="hsl(174, 20%, 85%)" />
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 py-12 px-4 border-t border-estuary-sage/20 mt-20">
+      <footer className="relative section-sage py-12 px-4 mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
