@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Navigation } from "@/components/navigation";
 import { EstuaryLogo, EstuaryLogoSimple } from "@/components/logo";
 import { AnimatedBackground } from "@/components/animated-background";
-import { WaveDivider } from "@/components/wave-divider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -40,12 +39,12 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className="nature-bg overflow-x-hidden">
       <AnimatedBackground />
       <Navigation />
       
       {/* Hero Section */}
-      <section id="home" className="relative section-cream min-h-screen flex items-center justify-center px-4">
+      <section id="home" className="relative z-10 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl mx-auto scroll-reveal">
           {/* Logo Display */}
           <div className="mb-8 flex justify-center">
@@ -82,11 +81,10 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#CAC6B1" />
       </section>
 
       {/* Key Principles Section */}
-      <section className="relative section-sage py-20 px-4">
+      <section className="relative z-10 py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
@@ -136,11 +134,10 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#FBF6E3" />
       </section>
 
       {/* Features Section */}
-      <section id="features" className="relative section-cream py-20 px-4">
+      <section id="features" className="relative z-10 py-20 px-4 bg-white/20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
@@ -213,11 +210,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#CAC6B1" />
       </section>
 
       {/* Download Section */}
-      <section id="download" className="relative section-sage py-20 px-4">
+      <section id="download" className="relative z-10 py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
@@ -260,11 +256,10 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <WaveDivider direction="bottom" color="#FBF6E3" />
       </section>
 
       {/* Footer */}
-      <footer className="relative section-cream py-12 px-4">
+      <footer className="relative z-10 py-12 px-4 border-t border-estuary-sage/20">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
