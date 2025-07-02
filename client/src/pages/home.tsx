@@ -48,8 +48,8 @@ export default function Home() {
         <div className="text-center max-w-4xl mx-auto scroll-reveal">
           {/* Logo Display */}
           <div className="mb-8 flex justify-center">
-            <div className="w-32 h-32 bg-estuary-cream rounded-3xl organic-blob shadow-xl flex items-center justify-center">
-              <EstuaryLogo className="w-24 h-24" />
+            <div className="w-32 h-32 bg-white/50 rounded-2xl shadow-xl flex items-center justify-center backdrop-blur-sm">
+              <EstuaryLogo className="w-24 h-24" variant="square" />
             </div>
           </div>
           
@@ -97,9 +97,9 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="scroll-reveal bg-white/40 backdrop-blur-sm rounded-3xl organic-blob shadow-lg hover:shadow-xl transition-all">
+            <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-estuary-teal rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-estuary-text mb-4">Your Data</h3>
@@ -109,9 +109,9 @@ export default function Home() {
               </CardContent>
             </Card>
             
-            <Card className="scroll-reveal bg-white/40 backdrop-blur-sm rounded-3xl organic-blob shadow-lg hover:shadow-xl transition-all">
+            <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-estuary-teal rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Laptop className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-estuary-text mb-4">Your Device</h3>
@@ -121,9 +121,9 @@ export default function Home() {
               </CardContent>
             </Card>
             
-            <Card className="scroll-reveal bg-white/40 backdrop-blur-sm rounded-3xl organic-blob shadow-lg hover:shadow-xl transition-all">
+            <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-estuary-teal rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Bot className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-estuary-text mb-4">Your AI</h3>
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
             
             <div className="scroll-reveal">
-              <Card className="bg-gradient-to-br from-estuary-teal/20 to-estuary-sage/20 rounded-3xl organic-blob shadow-lg">
+              <Card className="bg-gradient-to-br from-estuary-teal/20 to-estuary-sage/20 rounded-xl shadow-lg">
                 <CardContent className="p-12 flex items-center justify-center min-h-[400px]">
                   <div className="text-center">
                     <div className="grid grid-cols-2 gap-8">
@@ -223,12 +223,12 @@ export default function Home() {
               Download Estuary today and start building your private AI agent. Available for Mac and PC with easy setup.
             </p>
             
-            <Card className="bg-white/40 backdrop-blur-sm rounded-3xl organic-blob shadow-xl">
+            <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-xl">
               <CardContent className="p-8">
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                   <Button 
                     size="lg"
-                    className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group"
+                    className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group"
                   >
                     <Apple className="h-6 w-6 mr-3 group-hover:animate-bounce" />
                     <div className="text-left">
@@ -239,7 +239,7 @@ export default function Home() {
                   
                   <Button 
                     size="lg"
-                    className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group"
+                    className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group"
                   >
                     <WindowsIcon className="h-6 w-6 mr-3 group-hover:animate-bounce" />
                     <div className="text-left">

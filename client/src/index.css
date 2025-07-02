@@ -141,9 +141,7 @@
   transform: translateY(0);
 }
 
-.organic-blob {
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
+
 
 .nature-bg {
   background: linear-gradient(135deg, var(--estuary-cream) 0%, hsl(51, 35%, 93%) 100%);

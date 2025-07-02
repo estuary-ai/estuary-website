@@ -20,7 +20,7 @@ export default function Team() {
               Coming soon - learn about the passionate team building the future of private AI.
             </p>
             
-            <Card className="bg-gradient-to-br from-estuary-teal/10 to-estuary-sage/10 rounded-3xl organic-blob shadow-lg">
+            <Card className="bg-gradient-to-br from-estuary-teal/10 to-estuary-sage/10 rounded-xl shadow-lg">
               <CardContent className="p-16">
                 <div className="text-center">
                   <Users className="h-24 w-24 text-estuary-teal mb-6 mx-auto" />
