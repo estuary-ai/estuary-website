@@ -18,7 +18,7 @@ export default function Team() {
               Meet the Team
             </h1>
             <p className="text-xl text-estuary-sage mb-12 max-w-2xl mx-auto">
-              Coming soon - learn about the passionate team building the future of private AI.
+              Who's behind Estuary?
             </p>
             
             <Card className="bg-gradient-to-br from-estuary-teal/10 to-estuary-sage/10 rounded-xl shadow-lg">

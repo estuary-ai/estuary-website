@@ -23,7 +23,7 @@ export function Navigation() {
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
             <EstuaryLogoSimple />
-            <span className="text-2xl font-bold text-estuary-text">Estuary</span>
+            <span className="text-2xl font-medium font-fredoka text-estuary-text">Estuary</span>
           </Link>
           
           <div className="hidden md:flex space-x-8">
@@ -53,9 +53,9 @@ export function Navigation() {
                 Home
               </Link>
             )}
-            <Link href="/team" className="text-estuary-text hover:text-estuary-teal transition-colors">
-              Team
-            </Link>
+            {/* <Link href="/team" className="text-estuary-text hover:text-estuary-teal transition-colors">
+              About Us
+            </Link> */}
           </div>
           
           <button 

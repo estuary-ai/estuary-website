@@ -28,7 +28,7 @@
   --estuary-cream: hsl(51, 40%, 95%);
   --estuary-teal: hsl(180, 39%, 29%);
   --estuary-teal-dark: hsl(180, 39%, 27%);
-  --estuary-sage: hsl(174, 11%, 64%);
+  --estuary-sage: hsl(174, 15%, 45%);
   --estuary-text: hsl(174, 11%, 35%);
 }
 
@@ -56,13 +56,21 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border);
   }
 
   body {
-    @apply font-sans antialiased text-foreground;
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--foreground);
     background: #fef5e7;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Fredoka font for headers and titles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
   }
 
   html {

@@ -12,7 +12,7 @@ import {
   Glasses, 
   Monitor,
   Download,
-  Apple,
+  RectangleGoggles,
   Download as WindowsIcon
 } from "lucide-react";
 
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-estuary-text mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-medium text-estuary-text mb-6 leading-tight font-fredoka">
             Estuary
           </h1>
           <p className="text-xl md:text-2xl text-estuary-sage mb-8 font-light">
@@ -108,15 +108,14 @@ export default function Home() {
       </section>
 
       {/* Key Principles Section */}
-      <section className="relative section-sage py-20 px-4">
+      <section id="features" className="relative section-sage py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
+            <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
               YOUR DATA. YOUR DEVICE. YOUR AI.
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
-              Demand for spatially-aware companionship AI is growing, and so are data privacy concerns. 
-              Take control with Estuary's private, embodied AI platform.
+              Don't believe us?  Flip on Airplane Mode.
             </p>
           </div>
           
@@ -126,7 +125,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-estuary-text mb-4">Your Data</h3>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Your Data</h3>
                 <p className="text-estuary-sage leading-relaxed">
                   Complete data privacy with local processing. Your conversations, memories, and interactions stay on your device.
                 </p>
@@ -138,9 +137,9 @@ export default function Home() {
                 <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Laptop className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-estuary-text mb-4">Your Device</h3>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Your Device</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  Run entirely offline with no rate limits. Fast, responsive AI that works anywhere, anytime.
+                  Run entirely offline with absolutely no rate limits. Fast, responsive AI that works anywhere, anytime.
                 </p>
               </CardContent>
             </Card>
@@ -150,7 +149,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Bot className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-estuary-text mb-4">Your AI</h3>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Your AI</h3>
                 <p className="text-estuary-sage leading-relaxed">
                   Customizable personas and skills. Embodied agents that understand space, context, and you.
                 </p>
@@ -160,11 +159,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="relative section-cream py-20 px-4">
+      <section className="relative section-cream py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
+            <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
               Embodied AI, Reimagined
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
@@ -174,11 +172,11 @@ export default function Home() {
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="scroll-reveal">
-              <h3 className="text-3xl font-bold text-estuary-text mb-6">Multi-Platform Integration</h3>
+              <h3 className="text-3xl font-medium text-estuary-text mb-6 font-fredoka">Cross-Platform Integration</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <Glasses className="h-4 w-4 text-white" />
+                    <RectangleGoggles className="h-4 w-4 text-white" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-estuary-text mb-2">XR & Smart Glasses</h4>
@@ -196,7 +194,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <Monitor className="h-4 w-4 text-white" />
+                    <Laptop className="h-4 w-4 text-white" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-estuary-text mb-2">Desktop & Laptop</h4>
@@ -212,7 +210,7 @@ export default function Home() {
                   <div className="text-center">
                     <div className="grid grid-cols-2 gap-8">
                       <div className="floating-character text-center">
-                        <Glasses className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
+                        <RectangleGoggles className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
                         <p className="text-sm text-estuary-text font-semibold">XR/AR</p>
                       </div>
                       <div className="floating-character text-center">
@@ -224,7 +222,7 @@ export default function Home() {
                         <p className="text-sm text-estuary-text font-semibold">Laptop</p>
                       </div>
                       <div className="floating-character text-center">
-                        <Monitor className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
+                        <Glasses className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
                         <p className="text-sm text-estuary-text font-semibold">Smart Glasses</p>
                       </div>
                     </div>
@@ -240,11 +238,11 @@ export default function Home() {
       <section id="download" className="relative section-sage py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold text-estuary-text mb-6">
+            <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
               Ready to Get Started?
             </h2>
             <p className="text-xl text-estuary-sage mb-12 max-w-2xl mx-auto">
-              Download Estuary today and start building your private AI agent. Available on Mac and PC.
+              Download Estuary today and start building your private AI companion. Available on Mac and PC.
             </p>
             
             <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-xl">
@@ -261,8 +259,14 @@ export default function Home() {
                     </span>
                   </Button>
                 </div>
-                <div className="mt-6 text-sm text-estuary-sage">
-                  System requirements: macOS 12+ or Windows 10+, 8GB VRAM (Windows) or 16GB unified memory (macOS) recommended
+                <div className="mt-6 text-estuary-sage">
+                  <p className="font-semibold mb-2">Recommended System Specs:</p>
+                  <ul className="list-disc list-inside text-left">
+                    <li>OS: Windows 10+ or macOS 12+</li>
+                    <li>VRAM: 8GB (Windows) or 16GB unified memory (macOS)</li>
+                    <li>CPU: x64 (Intel/AMD) or Apple Silicon (M1+)</li>
+                    <li>Disk Space: 10GB+</li>
+                  </ul>
                 </div>
               </CardContent>
             </Card>
@@ -276,7 +280,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
               <EstuaryLogoSimple />
-              <span className="text-xl font-bold text-estuary-text">Estuary</span>
+              <span className="text-xl font-medium font-fredoka text-estuary-text">Estuary</span>
             </div>
             
             <div className="flex space-x-6 text-estuary-sage">
