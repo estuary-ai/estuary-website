@@ -163,7 +163,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
-              Embodied AI, Reimagined
+              Embodied Companion AI, Cross-Platform
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
               Experience lifelike, spatially-aware interactions with long-term learning capabilities across all your devices.
@@ -172,15 +172,14 @@ export default function Home() {
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="scroll-reveal">
-              <h3 className="text-3xl font-medium text-estuary-text mb-6 font-fredoka">Cross-Platform Integration</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
                     <RectangleGoggles className="h-4 w-4 text-white" />
-                  </div>
+              </div>
                   <div>
-                    <h4 className="font-semibold text-estuary-text mb-2">XR & Smart Glasses</h4>
-                    <p className="text-estuary-sage">Immersive experiences with spatial awareness and gesture recognition.</p>
+                    <h3 className="font-medium text-3xl text-estuary-text mb-2">XR & Smart Glasses</h3>
+                    <p className="text-lg text-estuary-sage">Immersive experiences with spatial awareness and gesture recognition.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -188,8 +187,8 @@ export default function Home() {
                     <Smartphone className="h-4 w-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-estuary-text mb-2">Mobile & Tablet</h4>
-                    <p className="text-estuary-sage">On-the-go AI companionship with camera and sensor integration.</p>
+                    <h3 className="font-medium text-3xl text-estuary-text mb-2">Mobile & Tablet</h3>
+                    <p className="text-lg text-estuary-sage">On-the-go AI companionship with voice and text.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -197,8 +196,8 @@ export default function Home() {
                     <Laptop className="h-4 w-4 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-estuary-text mb-2">Desktop & Laptop</h4>
-                    <p className="text-estuary-sage">Powerful AI processing with full multimodal capabilities.</p>
+                    <h3 className="font-medium text-3xl text-estuary-text mb-2">Desktop & Laptop</h3>
+                    <p className="text-lg text-estuary-sage">Powerful AI processing with full multimodal capabilities.</p>
                   </div>
                 </div>
               </div>
@@ -211,19 +210,19 @@ export default function Home() {
                     <div className="grid grid-cols-2 gap-8">
                       <div className="floating-character text-center">
                         <RectangleGoggles className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-sm text-estuary-text font-semibold">XR/AR</p>
+                        <p className="text-md text-estuary-text font-semibold">XR/AR</p>
                       </div>
                       <div className="floating-character text-center">
                         <Smartphone className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-sm text-estuary-text font-semibold">Mobile</p>
+                        <p className="text-md text-estuary-text font-semibold">Mobile</p>
                       </div>
                       <div className="floating-character text-center">
                         <Laptop className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-sm text-estuary-text font-semibold">Laptop</p>
+                        <p className="text-md text-estuary-text font-semibold">Laptop</p>
                       </div>
                       <div className="floating-character text-center">
                         <Glasses className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-sm text-estuary-text font-semibold">Smart Glasses</p>
+                        <p className="text-md text-estuary-text font-semibold">Smart Glasses</p>
                       </div>
                     </div>
                   </div>
