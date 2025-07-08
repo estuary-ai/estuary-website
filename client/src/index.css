@@ -216,8 +216,9 @@
 }
 
 .section-sage {
-  background: #fef5e7;
+  background: #d9d4bb;
 }
+
 
 /* Estuary custom utility classes */
 .text-estuary-cream { color: var(--estuary-cream); }
