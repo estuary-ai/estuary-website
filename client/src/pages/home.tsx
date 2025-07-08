@@ -89,7 +89,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
+              className="text-lg bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
               onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Download className="mr-2 h-5 w-5" />
@@ -98,7 +98,7 @@ export default function Home() {
             <Button 
               variant="outline"
               size="lg"
-              className="border-2 border-estuary-teal text-estuary-teal hover:bg-estuary-teal hover:text-white px-8 py-4 rounded-full font-semibold transition-all"
+              className="text-lg border-2 border-estuary-teal text-estuary-teal hover:bg-estuary-teal hover:text-white px-8 py-4 rounded-full font-semibold transition-all"
               onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Learn More
@@ -174,8 +174,8 @@ export default function Home() {
             <div className="scroll-reveal">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <RectangleGoggles className="h-4 w-4 text-white" />
+                  <div className="w-12 h-12 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
+                    <RectangleGoggles className="h-6 w-6 text-white" />
               </div>
                   <div>
                     <h3 className="font-medium text-3xl text-estuary-text mb-2">XR & Smart Glasses</h3>
@@ -183,17 +183,17 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <Smartphone className="h-4 w-4 text-white" />
+                  <div className="w-12 h-12 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
+                    <Smartphone className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-medium text-3xl text-estuary-text mb-2">Mobile & Tablet</h3>
-                    <p className="text-lg text-estuary-sage">On-the-go AI companionship with voice and text.</p>
+                    <p className="text-lg text-estuary-sage">Your AI on-the-go with camera, voice, and text.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <Laptop className="h-4 w-4 text-white" />
+                  <div className="w-12 h-12 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
+                    <Laptop className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-medium text-3xl text-estuary-text mb-2">Desktop & Laptop</h3>
@@ -207,22 +207,22 @@ export default function Home() {
               <Card className="bg-gradient-to-br from-estuary-teal/20 to-estuary-sage/20 rounded-xl shadow-lg">
                 <CardContent className="p-12 flex items-center justify-center min-h-[400px]">
                   <div className="text-center">
-                    <div className="grid grid-cols-2 gap-8">
+                    <div className="grid grid-cols-2 gap-16">
                       <div className="floating-character text-center">
-                        <RectangleGoggles className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-md text-estuary-text font-semibold">XR/AR</p>
+                        <RectangleGoggles className="h-14 w-14 text-estuary-teal mb-2 mx-auto" />
+                        <p className="text-lg text-estuary-text font-semibold">XR/AR</p>
                       </div>
                       <div className="floating-character text-center">
-                        <Smartphone className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-md text-estuary-text font-semibold">Mobile</p>
+                        <Smartphone className="h-14 w-14 text-estuary-teal mb-2 mx-auto" />
+                        <p className="text-lg text-estuary-text font-semibold">Mobile</p>
                       </div>
                       <div className="floating-character text-center">
-                        <Laptop className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-md text-estuary-text font-semibold">Laptop</p>
+                        <Laptop className="h-14 w-14 text-estuary-teal mb-2 mx-auto" />
+                        <p className="text-lg text-estuary-text font-semibold">Laptop</p>
                       </div>
                       <div className="floating-character text-center">
-                        <Glasses className="h-12 w-12 text-estuary-teal mb-2 mx-auto" />
-                        <p className="text-md text-estuary-text font-semibold">Smart Glasses</p>
+                        <Glasses className="h-14 w-14 text-estuary-teal mb-2 mx-auto" />
+                        <p className="text-lg text-estuary-text font-semibold">Smart Glasses</p>
                       </div>
                     </div>
                   </div>
@@ -253,16 +253,16 @@ export default function Home() {
                     onClick={handleDownload}
                   >
                     <Download className="h-6 w-6 mr-3 group-hover:animate-bounce" />
-                    <span className="text-base font-semibold">
+                    <span className="text-lg font-semibold">
                       Download for {os === "mac" ? "macOS" : os === "windows" ? "Windows" : "your OS"}
                     </span>
                   </Button>
                 </div>
-                <div className="mt-6 text-estuary-sage">
+                <div className="text-left mt-6 text-estuary-sage">
                   <p className="font-semibold mb-2">Recommended System Specs:</p>
-                  <ul className="list-disc list-inside text-left">
+                  <ul className="list-disc list-inside">
                     <li>OS: Windows 10+ or macOS 12+</li>
-                    <li>VRAM: 8GB (Windows) or 16GB unified memory (macOS)</li>
+                    <li>VRAM: 8GB+ (Windows) or 16GB+ unified memory (macOS)</li>
                     <li>CPU: x64 (Intel/AMD) or Apple Silicon (M1+)</li>
                     <li>Disk Space: 10GB+</li>
                   </ul>
