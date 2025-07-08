@@ -64,12 +64,13 @@ export default function Home() {
 
   return (
     <div className="overflow-x-hidden">
-      <AnimatedBackground />
       <Navigation />
       
       {/* Hero Section */}
-      <section id="home" className="relative section-cream min-h-screen flex items-center justify-center px-4">
-        <div className="text-center max-w-4xl mx-auto scroll-reveal">
+      <section id="home" className="relative section-cream min-h-screen flex items-center justify-center px-4 overflow-hidden">
+        {/* Animated background only for hero */}
+        <AnimatedBackground />
+        <div className="text-center max-w-4xl mx-auto scroll-reveal relative z-10">
           {/* Logo Display */}
           <div className="mb-8 flex justify-center">
             <div className="w-32 h-32 bg-white/50 rounded-2xl shadow-xl flex items-center justify-center backdrop-blur-sm">
