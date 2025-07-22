@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { EstuaryLogoHeader } from "./logo";
-import { Menu, X } from "lucide-react";
+import { Menu, X, LogOut } from "lucide-react";
 import { useState } from "react";
 
 export function Navigation() {
@@ -15,6 +15,11 @@ export function Navigation() {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("estuary-authenticated");
+    window.location.reload();
+  };
+
   const isHomePage = location === '/';
 
   return (
@@ -26,7 +31,7 @@ export function Navigation() {
             <span className="text-2xl font-medium font-fredoka text-estuary-text">Estuary</span>
           </Link>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {isHomePage ? (
               <>
                 <button 
@@ -56,6 +61,16 @@ export function Navigation() {
             {/* <Link href="/team" className="text-estuary-text hover:text-estuary-teal transition-colors">
               About Us
             </Link> */}
+            
+            {/* Logout button */}
+            <button
+              onClick={handleLogout}
+              className="text-estuary-sage hover:text-estuary-teal transition-colors flex items-center space-x-1"
+              title="Logout"
+            >
+              <LogOut size={16} />
+              <span>Logout</span>
+            </button>
           </div>
           
           <button 
@@ -107,6 +122,18 @@ export function Navigation() {
               >
                 Team
               </Link>
+              
+              {/* Mobile logout button */}
+              <button
+                onClick={() => {
+                  handleLogout();
+                  setMobileMenuOpen(false);
+                }}
+                className="text-estuary-sage hover:text-estuary-teal transition-colors text-left flex items-center space-x-2"
+              >
+                <LogOut size={16} />
+                <span>Logout</span>
+              </button>
             </div>
           </div>
         )}
