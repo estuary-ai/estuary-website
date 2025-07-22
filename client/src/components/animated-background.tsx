@@ -5,8 +5,6 @@ export function AnimatedBackground() {
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
-    let rippleCount = 0;
-    
     const handleScroll = () => {
       // Find the hero section
       const hero = document.getElementById('home');
@@ -19,26 +17,6 @@ export function AnimatedBackground() {
         }
         setOpacity(fade);
       }
-      if (rippleCount % 100 === 0) {
-        createRandomRipple();
-      }
-      rippleCount++;
-    };
-
-    const createRandomRipple = () => {
-      if (!containerRef.current) return;
-      const ripple = document.createElement('div');
-      ripple.className = 'water-ripple';
-      ripple.style.left = Math.random() * 100 + '%';
-      ripple.style.top = Math.random() * 100 + '%';
-      ripple.style.width = (20 + Math.random() * 40) + 'px';
-      ripple.style.height = ripple.style.width;
-      containerRef.current.appendChild(ripple);
-      setTimeout(() => {
-        if (ripple.parentNode) {
-          ripple.remove();
-        }
-      }, 4000);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -64,9 +42,6 @@ export function AnimatedBackground() {
       {/* Additional reeds for more visibility */}
       <div className="reed" style={{ left: '15%', bottom: 0, height: '90px', animationDelay: '-1.5s' }} />
       <div className="reed" style={{ left: '85%', bottom: 0, height: '130px', animationDelay: '-0.8s' }} />
-      {/* Initial water ripples */}
-      <div className="water-ripple" style={{ left: '20%', top: '70%', width: '60px', height: '60px', animationDelay: '0s' }} />
-      <div className="water-ripple" style={{ left: '80%', top: '80%', width: '40px', height: '40px', animationDelay: '-2s' }} />
     </div>
   );
 }
