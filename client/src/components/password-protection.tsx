@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Lock, Eye, EyeOff } from "lucide-react";
+import { Lock, Eye, EyeOff, ArrowRight } from "lucide-react";
 import { EstuaryLogo } from "@/components/logo";
 
 interface PasswordProtectionProps {
@@ -39,9 +39,19 @@ export function PasswordProtection({ onPasswordCorrect }: PasswordProtectionProp
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-estuary-cream to-estuary-sage flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
-        <Card className="bg-white/80 backdrop-blur-sm shadow-2xl border-0">
+    <div className="min-h-screen bg-gradient-to-br from-estuary-cream to-estuary-sage flex items-start justify-center p-4 relative overflow-hidden pt-36">
+      {/* Swaying Reeds */}
+      <div className="reed" style={{ left: '5%', bottom: 0, height: '120px', animationDelay: '0s' }} />
+      <div className="reed" style={{ left: '8%', bottom: 0, height: '100px', animationDelay: '-1s' }} />
+      <div className="reed" style={{ left: '92%', bottom: 0, height: '140px', animationDelay: '-2s' }} />
+      <div className="reed" style={{ left: '95%', bottom: 0, height: '110px', animationDelay: '-0.5s' }} />
+      <div className="reed" style={{ left: '15%', bottom: 0, height: '90px', animationDelay: '-1.5s' }} />
+      <div className="reed" style={{ left: '85%', bottom: 0, height: '130px', animationDelay: '-0.8s' }} />
+      <div className="reed" style={{ left: '25%', bottom: 0, height: '105px', animationDelay: '-1.2s' }} />
+      <div className="reed" style={{ left: '75%', bottom: 0, height: '115px', animationDelay: '-0.3s' }} />
+      
+      <div className="w-full max-w-md relative z-10">
+        <Card className="bg-transparent backdrop-blur-sm shadow-none border-0">
           <CardHeader className="text-center pb-6">
             <div className="flex justify-center">
               <EstuaryLogo />
@@ -49,9 +59,6 @@ export function PasswordProtection({ onPasswordCorrect }: PasswordProtectionProp
             <CardTitle className="text-2xl font-medium text-estuary-text font-fredoka">
               Welcome to Estuary
             </CardTitle>
-            <p className="text-estuary-sage mt-2">
-              Amazing things in progress! <br/> Password please for a peak!
-            </p>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -61,42 +68,37 @@ export function PasswordProtection({ onPasswordCorrect }: PasswordProtectionProp
                   placeholder="Enter password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="pr-10 text-lg py-3 border-2 border-estuary-sage/20 focus:border-estuary-teal"
+                  className="pr-16 text-lg py-3 border-2 border-estuary-sage/30 focus:border-estuary-teal bg-white/20 backdrop-blur-sm rounded-lg"
                   disabled={isLoading}
                 />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-estuary-sage hover:text-estuary-teal transition-colors"
-                  disabled={isLoading}
-                >
-                  {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
-                </button>
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center space-x-1">
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="text-estuary-sage hover:text-estuary-teal transition-colors p-1"
+                    disabled={isLoading}
+                  >
+                    {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={isLoading || !password.trim()}
+                    className="bg-estuary-teal hover:bg-estuary-teal-dark text-white p-2 rounded-md transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  >
+                    {isLoading ? (
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    ) : (
+                      <ArrowRight className="h-4 w-4" />
+                    )}
+                  </button>
+                </div>
               </div>
               
               {error && (
-                <div className="text-red-500 text-sm text-center bg-red-50 p-3 rounded-lg border border-red-200">
+                <div className="text-red-500 text-sm text-center bg-red-50/50 p-3 rounded-lg border border-red-200/50">
                   {error}
                 </div>
               )}
-              
-              <Button
-                type="submit"
-                className="w-full bg-estuary-teal hover:bg-estuary-teal-dark text-white py-3 text-lg font-semibold rounded-lg transition-all transform hover:scale-105 shadow-lg"
-                disabled={isLoading || !password.trim()}
-              >
-                {isLoading ? (
-                  <div className="flex items-center">
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    Verifying...
-                  </div>
-                ) : (
-                  <div className="flex items-center">
-                    <Lock className="mr-2 h-5 w-5" />
-                    Access Site
-                  </div>
-                )}
-              </Button>
             </form>
           </CardContent>
         </Card>
