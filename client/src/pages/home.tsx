@@ -80,10 +80,11 @@ export default function Home() {
             Estuary
           </h1>
           <p className="text-xl md:text-2xl text-estuary-sage mb-8 font-light">
-            Squarespace for private, embodied AI agents
+            Platform for building private, embodied AI agents
           </p>
           <p className="text-lg text-estuary-text mb-12 max-w-2xl mx-auto leading-relaxed">
-            Build, download, and run personal AI agents with user-definable skills and personas on your own device. Get started now for free!
+            Build and run AI companions, chatbots, agents, and more on your own device!
+            <br/> Total privacy. No rate limits. Get started now for free!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="relative">
@@ -130,7 +131,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto py-20 px-4">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
-              YOUR DATA. YOUR DEVICE. YOUR AI.
+              {/* YOUR DATA. YOUR DEVICE. YOUR AI. */}
+              Your Data. Your Device. Your AI.
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
               Don't believe us?  Flip on Airplane Mode.
