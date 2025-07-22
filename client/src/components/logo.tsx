@@ -1,11 +1,12 @@
-import estuaryLogoSquare from "@assets/Estuary_Logo_Square_1751484396675.png";
-import estuaryLogoCircle from "@assets/Estuary_Logo_Circle_1751484396675.png";
+import estuaryLogoCurved from "@images/Estuary_Logo_Curved.png";
+import estuaryLogoSquare from "@images/Estuary_Logo_Square.png";
+import estuaryLogoCircle from "@images/Estuary_Logo_Circle.png";
+import estuaryLogoTransparent from "@images/Estuary_Logo_Transparent.png";
 
-export function EstuaryLogo({ className = "w-20 h-20", variant = "square" }: { className?: string; variant?: "square" | "circle" }) {
-  const logoSrc = variant === "circle" ? estuaryLogoCircle : estuaryLogoSquare;
-  
+export function EstuaryLogo({ className = "w-64 h-64" }: { className?: string }) {
+  const logoSrc = estuaryLogoTransparent;
   return (
-    <div className={`relative ${className}`}>
+    <div className={`${className}`}>
       <img 
         src={logoSrc} 
         alt="Estuary Logo" 
@@ -15,11 +16,11 @@ export function EstuaryLogo({ className = "w-20 h-20", variant = "square" }: { c
   );
 }
 
-export function EstuaryLogoSimple({ className = "w-8 h-8" }: { className?: string }) {
+export function EstuaryLogoHeader({ className = "w-16 h-16" }: { className?: string }) {
   return (
     <div className={`${className}`}>
       <img 
-        src={estuaryLogoCircle} 
+        src={estuaryLogoTransparent} 
         alt="Estuary Logo" 
         className="w-full h-full object-contain rounded-full"
       />

@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/navigation";
 import { AnimatedBackground } from "@/components/animated-background";
 import { WaveDivider } from "@/components/wave-divider";
-import { EstuaryLogoSimple } from "@/components/logo";
+import { EstuaryLogoHeader } from "@/components/logo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users } from "lucide-react";
 
@@ -42,7 +42,7 @@ export default function Team() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <EstuaryLogoSimple />
+              <EstuaryLogoHeader />
               <span className="text-xl font-bold text-estuary-text">Estuary</span>
             </div>
             

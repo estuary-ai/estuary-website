@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navigation } from "@/components/navigation";
-import { EstuaryLogo, EstuaryLogoSimple } from "@/components/logo";
+import { EstuaryLogo, EstuaryLogoHeader } from "@/components/logo";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -72,10 +72,8 @@ export default function Home() {
         <AnimatedBackground />
         <div className="text-center max-w-4xl mx-auto scroll-reveal relative z-10">
           {/* Logo Display */}
-          <div className="mb-8 flex justify-center">
-            <div className="w-32 h-32 bg-white/50 rounded-2xl shadow-xl flex items-center justify-center backdrop-blur-sm">
-              <EstuaryLogo className="w-24 h-24" variant="square" />
-            </div>
+          <div className="flex justify-center">
+            <EstuaryLogo/>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-medium text-estuary-text mb-6 leading-tight font-fredoka">
@@ -336,7 +334,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto py-12 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <EstuaryLogoSimple />
+              <EstuaryLogoHeader />
               <span className="text-xl font-medium font-fredoka text-estuary-text">Estuary</span>
             </div>
             
