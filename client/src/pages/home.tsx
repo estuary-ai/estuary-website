@@ -194,7 +194,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto py-20 px-4">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
-              Embodied Companion AI, Cross-Platform
+              Embodied AI Agents, Cross-Platform
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
               Experience lifelike, spatially-aware interactions with long-term learning capabilities across all your devices.
@@ -210,7 +210,7 @@ export default function Home() {
               </div>
                   <div>
                     <h3 className="font-medium text-3xl text-estuary-text mb-2">XR & Smart Glasses</h3>
-                    <p className="text-lg text-estuary-sage">Immersive experiences with spatial awareness and gesture recognition.</p>
+                    <p className="text-lg text-estuary-sage">Immersive experiences with spatial understanding and gesture recognition.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -283,7 +283,7 @@ export default function Home() {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-estuary-sage mb-12 max-w-2xl mx-auto">
-              Download Estuary today and start building your private AI companion. Available on Mac and PC.
+              Download Estuary today and start building your private AI. Available on Mac and PC.
             </p>
             
             <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-xl">
