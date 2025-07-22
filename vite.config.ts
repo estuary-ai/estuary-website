@@ -27,8 +27,8 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
-  // Add base path for GitHub Pages only when building for deployment
-  base: process.env.GITHUB_PAGES === 'true' ? '/estuary-website/' : '/',
+  // Use root base path for custom domain
+  base: '/',
   server: {
     fs: {
       strict: true,
