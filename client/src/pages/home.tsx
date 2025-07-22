@@ -88,14 +88,20 @@ export default function Home() {
             Build, download, and run personal AI agents with user-definable skills and personas on your own device. Get started now for free!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg"
-              className="text-lg bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg"
-              onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <Download className="mr-2 h-5 w-5" />
-              Download Now
-            </Button>
+            <div className="relative">
+              <Button 
+                size="lg"
+                className="text-lg bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg opacity-60 cursor-not-allowed"
+                onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
+                disabled
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download Now
+              </Button>
+              <div className="absolute -top-2 -right-2 bg-estuary-sage text-white text-xs font-semibold px-2 py-1 rounded-full shadow-lg border border-white/20">
+                Coming Soon
+              </div>
+            </div>
             <Button 
               variant="outline"
               size="lg"
@@ -283,16 +289,21 @@ export default function Home() {
             <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-xl">
               <CardContent className="p-8">
                 <div className="flex flex-col gap-6 justify-center items-center">
-                  <Button 
-                    size="lg"
-                    className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group"
-                    onClick={handleDownload}
-                  >
-                    <Download className="h-6 w-6 mr-3 group-hover:animate-bounce" />
-                    <span className="text-lg font-semibold">
-                      Download for {os === "mac" ? "macOS" : os === "windows" ? "Windows" : "your OS"}
-                    </span>
-                  </Button>
+                  <div className="relative">
+                    <Button 
+                      size="lg"
+                      className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-8 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg flex items-center group opacity-60 cursor-not-allowed"
+                      disabled
+                    >
+                      <Download className="h-6 w-6 mr-3 group-hover:animate-bounce" />
+                      <span className="text-lg font-semibold">
+                        Download for {os === "mac" ? "macOS" : os === "windows" ? "Windows" : "your OS"}
+                      </span>
+                    </Button>
+                    <div className="absolute -top-2 -right-2 bg-estuary-sage text-white text-xs font-semibold px-2 py-1 rounded-full shadow-lg border border-white/20">
+                      Coming Soon
+                    </div>
+                  </div>
                 </div>
                 <div className="text-left mt-6 text-estuary-sage">
                   <p className="font-semibold mb-2">Recommended System Specs:</p>
