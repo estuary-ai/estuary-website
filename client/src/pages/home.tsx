@@ -13,7 +13,8 @@ import {
   Monitor,
   Download,
   RectangleGoggles,
-  Download as WindowsIcon
+  Download as WindowsIcon,
+  Linkedin
 } from "lucide-react";
 
 export default function Home() {
@@ -135,7 +136,7 @@ export default function Home() {
               Your Data. Your Device. Your AI.
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
-              Don't believe us?  Flip on Airplane Mode.
+              Don't believe us?  Flip on airplane mode.
             </p>
           </div>
           
@@ -147,7 +148,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Your Data</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  Complete data privacy with local processing. Your conversations, memories, and interactions stay on your device.
+                  Complete data privacy with local processing. Your conversations and agent memories stay on your device.
                 </p>
               </CardContent>
             </Card>
@@ -194,10 +195,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto py-20 px-4">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
-              Embodied AI Agents, Cross-Platform
+              Cross-Platform Embodied AI Agents
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
-              Experience lifelike, spatially-aware interactions with long-term learning capabilities across all your devices.
+              Build your agent once and run it on all your devices.  Or chain your devices together to combine their processing power!
             </p>
           </div>
           
@@ -334,22 +335,34 @@ export default function Home() {
           <path fill="#d9d4bb" fillOpacity="1" d="M0,64L40,106.7C80,149,160,235,240,250.7C320,267,400,213,480,165.3C560,117,640,75,720,80C800,85,880,139,960,160C1040,181,1120,171,1200,154.7C1280,139,1360,117,1400,106.7L1440,96L1440,340L1400,340C1360,340,1280,340,1200,340C1120,340,1040,340,960,340C880,340,800,340,720,340C640,340,560,340,480,340C400,340,320,340,240,340C160,340,80,340,40,340L0,340Z" />
         </svg>
         <div className="max-w-6xl mx-auto py-12 px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <EstuaryLogoHeader />
-              <span className="text-xl font-medium font-fredoka text-estuary-text">Estuary</span>
+          <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="flex items-center space-x-3 mb-6 md:mb-0">
+                <EstuaryLogoHeader />
+                <span className="text-xl font-medium font-fredoka text-estuary-text">Estuary</span>
+              </div>
+              
+              <div className="flex space-x-6 text-estuary-sage">
+                <a href="#" className="hover:text-estuary-teal transition-colors">Privacy Policy</a>
+                <a href="#" className="hover:text-estuary-teal transition-colors">Terms of Service</a>
+                <a href="#" className="hover:text-estuary-teal transition-colors">Contact</a>
+              </div>
             </div>
-            
-            <div className="flex space-x-6 text-estuary-sage">
-              <a href="#" className="hover:text-estuary-teal transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-estuary-teal transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-estuary-teal transition-colors">Contact</a>
+            <div className="flex justify-end">
+              <a 
+                href="https://www.linkedin.com/company/estuary-agents/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-estuary-sage hover:bg-estuary-teal rounded-full flex items-center justify-center transition-colors"
+              >
+                <Linkedin className="h-4 w-4 text-white" />
+              </a>
             </div>
           </div>
           
           <div className="text-center mt-8 pt-8 border-t border-estuary-sage/20">
             <p className="text-estuary-sage">
-              © 2025 Estuary. You Data. Your Device. Your AI.
+              © 2025 Estuary - You Data. Your Device. Your AI.
             </p>
           </div>
         </div>
