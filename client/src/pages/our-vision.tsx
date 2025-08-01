@@ -7,7 +7,10 @@ import {
   History,
   Sparkles,
   Globe,
-  Users
+  Users,
+  Rocket,
+  Microscope,
+  PlaneTakeoff
 } from "lucide-react";
 
 
@@ -46,6 +49,8 @@ export default function Vision() {
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
               What's in a Name?
             </h2>
+            {/* <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
+            </p> */}
           </div>
           
           <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg">
@@ -96,7 +101,7 @@ export default function Vision() {
               <Telescope className="h-10 w-10 text-white" />
             </div>
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
-              Our Vision for the Future
+              Our Vision
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
               Envisioning a world where AI enhances human potential without compromising privacy
@@ -165,27 +170,30 @@ export default function Vision() {
               <History className="h-10 w-10 text-white" />
             </div>
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
-              Our History
+              Our Journey
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
-              From humble beginnings to pioneering the future of private, embodied AI.
+              From humble streams to a thriving estuary.
             </p>
           </div>
           
           <div className="space-y-12">
             <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg">
               <CardContent className="p-8">
-                <div className="flex items-start space-x-6">
+                <div className="flex items-center space-x-6">
                   <div className="w-16 h-16 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-white">2023</span>
+                    <Rocket className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">The Beginning</h3>
+                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">NASA SUITS Challenge • 2022-2023</h3>
                     <p className="text-lg text-estuary-sage leading-relaxed">
-                      Estuary was founded with a simple yet powerful vision: to make AI technology 
-                      accessible to everyone while preserving the fundamental right to privacy. 
-                      Our founders recognized that the future of AI shouldn't come at the cost of 
-                      personal autonomy.
+                      Estuary has its roots in the NASA SUITS Challenge, collaborating with NASA engineers and
+                      astronauts to build conversational AI agents integrated with AR heads-up-displays for 
+                      astronauts exploring martian and lunar terrain. Our early agents were able to ingest spatial
+                      information and verbally respond in real-time to astronauts to boost safety, lessen cognitive
+                      load, and improve situational awareness. Through building our system to work in the vacuum of 
+                      space with zero-internet, we developed the foundations of our off-cloud spatially-aware 
+                      conversational AI agent infrastructure.  
                     </p>
                   </div>
                 </div>
@@ -194,17 +202,19 @@ export default function Vision() {
 
             <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg">
               <CardContent className="p-8">
-                <div className="flex items-start space-x-6">
+                <div className="flex items-center space-x-6">
                   <div className="w-16 h-16 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-white">2024</span>
+                    <Microscope className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Building the Foundation</h3>
+                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Academic Research • 2023-2025</h3>
                     <p className="text-lg text-estuary-sage leading-relaxed">
-                      We assembled a team of passionate engineers, researchers, and designers who 
-                      shared our vision. Together, we began developing the core technology that 
-                      would power private, embodied AI agents capable of running entirely on 
-                      personal devices.
+                      As AI became ubiquitous in everyday life, we realized people would inevitably reveal 
+                      their private information when interacting with AI. Undoubtedly, corporations would 
+                      collect, sell, and train on our data. Hence, we decided to apply our learnings from 
+                      NASA SUITS to develop Estuary as an open-source research platform to run off-cloud 
+                                                                    AI agents. We published at <a href="https://arxiv.org/abs/2504.14427" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Conference on Human Factors in Computing Systems (CHI'25)</a> and <a href="https://arxiv.org/abs/2410.20116" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Intelligent Virtual Agents (IVA'24)</a>, top conferences in the agents field. We also
+                                             won the <a href="https://devpost.com/software/paw-pals-connect" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Best Use of Apple Vision Pro Award</a> at MIT Reality Hack 2025.
                     </p>
                   </div>
                 </div>
@@ -213,16 +223,21 @@ export default function Vision() {
 
             <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg">
               <CardContent className="p-8">
-                <div className="flex items-start space-x-6">
+                <div className="flex items-center space-x-6">
                   <div className="w-16 h-16 bg-estuary-teal rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-white">2025</span>
+                    <PlaneTakeoff className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Looking Forward</h3>
+                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Looking Forward • 2025-present</h3>
                     <p className="text-lg text-estuary-sage leading-relaxed">
-                      As we prepare to launch our platform, we're excited to bring our vision to life. 
-                      We're building not just a product, but a movement towards a more private, 
-                      more personal, and more human-centered future of AI technology.
+                      As we prepare to launch Estuary, we're excited to bring not only our vision 
+                      to life, but a movement towards private, embodied AI agents and companions that
+                      we truly own.
+                      We are currently seeking investment to help us build this future, please reach out
+                      if you interested in working with us.
+                      Similar to how the mainframe gave way to the personal computer, Estuary is 
+                      bringing AI from the cloud and into our devices. You own your data, your device,
+                      your AI. Always.
                     </p>
                   </div>
                 </div>
@@ -234,7 +249,7 @@ export default function Vision() {
 
       {/* Footer */}
       <footer className="relative section-cream">
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
           width="100%"
@@ -243,7 +258,7 @@ export default function Vision() {
           preserveAspectRatio="none"
         >
           <path fill="#fef5e7" fillOpacity="1" d="M0,64L40,106.7C80,149,160,235,240,250.7C320,267,400,213,480,165.3C560,117,640,75,720,80C800,85,880,139,960,160C1040,181,1120,171,1200,154.7C1280,139,1360,117,1400,106.7L1440,96L1440,340L1400,340C1360,340,1280,340,1200,340C1120,340,1040,340,960,340C880,340,800,340,720,340C640,340,560,340,480,340C400,340,320,340,240,340C160,340,80,340,40,340L0,340Z" />
-        </svg>
+        </svg> */}
         <div className="max-w-6xl mx-auto py-12 px-4">
           <div className="text-center">
             <p className="text-estuary-sage">
