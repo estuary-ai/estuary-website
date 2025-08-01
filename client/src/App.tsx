@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { PasswordProtection } from "@/components/password-protection";
 import Home from "@/pages/home";
 import Team from "@/pages/team";
+import Vision from "@/pages/our-vision";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -12,6 +13,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/team" component={Team} />
+      <Route path="/vision" component={Vision} />
       <Route component={NotFound} />
     </Switch>
   );

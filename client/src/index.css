@@ -16,6 +16,7 @@
   --primary: hsl(180, 39%, 29%);
   --primary-foreground: hsl(51, 40%, 95%);
   --secondary: hsl(51, 25%, 90%);
+  --secondary-dark: #d8d4ba;
   --secondary-foreground: hsl(174, 30%, 20%);
   --accent: hsl(51, 25%, 90%);
   --accent-foreground: hsl(174, 30%, 20%);

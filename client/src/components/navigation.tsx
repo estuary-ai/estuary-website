@@ -8,9 +8,16 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (isHomePage) {
+      // If we're on the home page, scroll to the section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setMobileMenuOpen(false);
+      }
+    } else {
+      // If we're not on the home page, navigate to home with the section as hash
+      window.location.href = `/#${sectionId}`;
       setMobileMenuOpen(false);
     }
   };
@@ -32,32 +39,21 @@ export function Navigation() {
           </Link>
           
           <div className="hidden md:flex space-x-8 items-center">
-            {isHomePage ? (
-              <>
-                <button 
-                  onClick={() => scrollToSection('home')}
-                  className="text-estuary-text hover:text-estuary-teal transition-colors"
-                >
-                  Home
-                </button>
-                <button 
-                  onClick={() => scrollToSection('features')}
-                  className="text-estuary-text hover:text-estuary-teal transition-colors"
-                >
-                  Features
-                </button>
-                <button 
-                  onClick={() => scrollToSection('download')}
-                  className="text-estuary-text hover:text-estuary-teal transition-colors"
-                >
-                  Download
-                </button>
-              </>
-            ) : (
-              <Link href="/" className="text-estuary-text hover:text-estuary-teal transition-colors">
-                Home
-              </Link>
-            )}
+          <button 
+              onClick={() => scrollToSection('features')}
+              className="text-estuary-text hover:text-estuary-teal transition-colors"
+            >
+              Features
+            </button>
+            <button 
+              onClick={() => scrollToSection('download')}
+              className="text-estuary-text hover:text-estuary-teal transition-colors"
+            >
+              Download
+            </button>
+            <Link href="/vision" className="text-estuary-text hover:text-estuary-teal transition-colors">
+              Our Vision
+            </Link>
             {/* <Link href="/team" className="text-estuary-text hover:text-estuary-teal transition-colors">
               About Us
             </Link> */}
@@ -115,6 +111,13 @@ export function Navigation() {
                   Home
                 </Link>
               )}
+              <Link 
+                href="/vision" 
+                className="text-estuary-text hover:text-estuary-teal transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Vision
+              </Link>
               <Link 
                 href="/team" 
                 className="text-estuary-text hover:text-estuary-teal transition-colors"

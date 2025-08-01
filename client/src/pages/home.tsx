@@ -10,10 +10,8 @@ import {
   Bot, 
   Smartphone, 
   Glasses, 
-  Monitor,
   Download,
   RectangleGoggles,
-  Download as WindowsIcon,
   Linkedin
 } from "lucide-react";
 
@@ -30,6 +28,24 @@ export default function Home() {
 
   useEffect(() => {
     setOS(getOS());
+  }, []);
+
+  // Handle hash navigation when arriving from another page
+  useEffect(() => {
+    const handleHashNavigation = () => {
+      const hash = window.location.hash.substring(1); // Remove the # symbol
+      if (hash) {
+        // Wait a bit for the page to fully load, then scroll to the section
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+    };
+
+    handleHashNavigation();
   }, []);
 
   const handleDownload = () => {
@@ -71,7 +87,7 @@ export default function Home() {
       <section id="home" className="relative section-cream min-h-screen flex items-center justify-center px-4 overflow-hidden">
         {/* Animated background only for hero */}
         <AnimatedBackground />
-        <div className="text-center max-w-4xl mx-auto scroll-reveal relative z-10">
+        <div className="text-center max-w-4xl mx-auto scroll-reveal relative z-10 -mt-40">
           {/* Logo Display */}
           <div className="flex justify-center">
             <EstuaryLogo/>
