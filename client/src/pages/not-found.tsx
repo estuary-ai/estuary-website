@@ -4,7 +4,7 @@ import { AlertCircle } from "lucide-react";
 export default function NotFound() {
   return (
          <div className="min-h-screen w-full flex items-center justify-center">
-               <Card className="w-full max-w-md mx-4 bg-estuary-secondary">
+               <Card className="w-full max-w-md mx-4">
         <CardContent className="pt-6">
           <div className="flex mb-4 gap-2">
             <AlertCircle className="h-8 w-8 text-red-500" />
@@ -12,7 +12,7 @@ export default function NotFound() {
           </div>
 
           <p className="mt-4 text-sm text-gray-600">
-            Try again later.
+            Return to the <a href="/" className="underline text-estuary-teal hover:text-estuary-teal-dark"> home page</a>.
           </p>
         </CardContent>
       </Card>

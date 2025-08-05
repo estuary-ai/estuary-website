@@ -10,7 +10,10 @@ import {
   Users,
   Rocket,
   Microscope,
-  PlaneTakeoff
+  PlaneTakeoff,
+  MapPin,
+  Download,
+  Shield
 } from "lucide-react";
 
 
@@ -58,23 +61,20 @@ export default function Vision() {
               <div className="grid lg:grid-cols gap-12 items-center">
                 <div>
                   <h3 className="text-3xl font-medium text-estuary-text mb-6 font-fredoka">
-                    Where Rivers Meet the Ocean
+                    Where Rivers Meet Ocean
                   </h3>
                   <p className="text-lg text-estuary-sage leading-relaxed mb-6">
-                    An estuary is where rivers meet the vast ocean - a place of convergence
-                    and new possibilities. It is also the nursery for nearly four-fifths
-                    of the world's oceanic fish and shellfish.
-                  </p>
-                  <p className="text-lg text-estuary-sage leading-relaxed mb-6">
-                    Just as an estuary is a place of convergence, Estuary seeks to combine the
-                    most cutting-edge streams of AI research and innovations into creating a
-                    platform for building and running lifelike AI agents and companions.
+                    Just as an estuary is a place where rivers meet the sea, Estuary brings
+                    together the most advanced streams of AI research and innovations.
+                    Our platform is designed to build and power lifelike AI agents and companions, 
+                    blending the latest breakthroughs into something truly alive.
                   </p>
                   <p className="text-lg text-estuary-sage leading-relaxed">
-                    Similar to how estuaries are nursuries for the ocean's young, our mission 
-                    is to cultivate advanced AI agents that continually grow with you and with
-                    each advancement in AI technology. Estuary is a safe harbor - a protected 
-                    space where your data and privacy are preserved.
+                    Estuaries are the cradle of life for nearly four-fifths of the ocean's fish 
+                    and shellfish.  At Estuary, we’re building advanced AI agents that evolve
+                    alongside you, keeping pace with every leap in AI technology. Just like the 
+                    natural estuary, this is a protected refuge where your data and privacy 
+                    are carefully safeguarded.
                   </p>
                 </div>
               </div>
@@ -104,21 +104,51 @@ export default function Vision() {
               Our Vision
             </h2>
             <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
-              Envisioning a world where AI enhances human potential without compromising privacy
+              Bringing AI from the cloud into our devices.
             </p>
           </div>
           
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
+                  <Shield className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Privacy-First</h3>
+                <p className="text-estuary-sage leading-relaxed">
+                  Estuary agents understand and assist without surveillance. 
+                  Your conversations, memories, and personal data remain yours alone, processed locally 
+                  on your devices without touching the cloud. Your AI works for you, not a corporation.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
+                  <Download className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Ownership</h3>
+                <p className="text-estuary-sage leading-relaxed">
+                  While competing AI companion platforms still treat agents as cloud APIs, we treat
+                  them as living entities that grow with you. Your agents are not rented services.
+                  They will continue working even if we go under.  And of course, their personality
+                  and behavior will never change unless you change it.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Democratized AI</h3>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Multiplayer</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  We envision a future where powerful AI technology is accessible to everyone, not just 
-                  large corporations. Every individual should have the ability to create and customize 
-                  their own AI companions.
+                  Estuary agents are not only 1-on-1. Your companions can interact with you, other 
+                  agents, and your friends, forming a social network of multiple humans and agents.
                 </p>
               </CardContent>
             </Card>
@@ -187,7 +217,8 @@ export default function Vision() {
                   <div>
                     <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">NASA SUITS Challenge • 2022-2023</h3>
                     <p className="text-lg text-estuary-sage leading-relaxed">
-                      Estuary has its roots in the NASA SUITS Challenge, collaborating with NASA engineers and
+                      Estuary has its roots in the <a href="https://www.youtube.com/watch?v=d4mOWeIuvMI&ab_channel=StanleyLin" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">
+                      NASA SUITS Challenge</a>, collaborating with NASA engineers and
                       astronauts to build conversational AI agents integrated with AR heads-up-displays for 
                       astronauts exploring martian and lunar terrain. Our early agents were able to ingest spatial
                       information and verbally respond in real-time to astronauts to boost safety, lessen cognitive
