@@ -51,8 +51,8 @@ export function Navigation() {
             >
               Download
             </button>
-            <Link href="/vision" className="text-estuary-text hover:text-estuary-teal transition-colors">
-              Our Vision
+            <Link href="/about" className="text-estuary-text hover:text-estuary-teal transition-colors">
+              About Us
             </Link>
             {/* <Link href="/team" className="text-estuary-text hover:text-estuary-teal transition-colors">
               About Us
@@ -112,11 +112,11 @@ export function Navigation() {
                 </Link>
               )}
               <Link 
-                href="/vision" 
+                href="/about" 
                 className="text-estuary-text hover:text-estuary-teal transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Vision
+                About Us
               </Link>
               <Link 
                 href="/team" 
