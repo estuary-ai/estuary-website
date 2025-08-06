@@ -118,13 +118,6 @@ export function Navigation() {
               >
                 About Us
               </Link>
-              <Link 
-                href="/team" 
-                className="text-estuary-text hover:text-estuary-teal transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Team
-              </Link>
               
               {/* Mobile logout button */}
               <button
