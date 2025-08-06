@@ -126,9 +126,9 @@ export default function Home() {
               variant="outline"
               size="lg"
               className="text-lg border-2 border-estuary-teal text-estuary-teal hover:bg-estuary-teal hover:text-white px-8 py-4 rounded-full font-semibold transition-all"
-              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Learn More
+              Watch a Demo
             </Button>
           </div>
         </div>
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       {/* Video Section */}
-      <section className="relative section-cream">
+      <section id="demo" className="relative section-cream">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
