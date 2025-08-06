@@ -200,6 +200,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="relative section-cream">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          width="100%"
+          height="120"
+          style={{ transform: 'rotate(180deg)', display: 'block', marginTop: '-1px' }}
+          preserveAspectRatio="none"
+        >
+          <path fill="#d9d4bb" fillOpacity="1" d="M0,96L18.5,133.3C36.9,171,74,245,111,240C147.7,235,185,149,222,149.3C258.5,149,295,235,332,229.3C369.2,224,406,128,443,117.3C480,107,517,181,554,213.3C590.8,245,628,235,665,197.3C701.5,160,738,96,775,85.3C812.3,75,849,117,886,133.3C923.1,149,960,139,997,133.3C1033.8,128,1071,128,1108,133.3C1144.6,139,1182,149,1218,170.7C1255.4,192,1292,224,1329,202.7C1366.2,181,1403,107,1422,69.3L1440,32L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z" />
+        </svg>
+        <div className="max-w-6xl mx-auto py-20 px-4">
+          <div className="text-center mb-16 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
+              See Estuary in Action
+            </h2>
+            <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
+              Watch how Estuary brings AI from the cloud into your devices
+            </p>
+          </div>
+          
+          <div className="flex justify-center scroll-reveal">
+            <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all overflow-hidden w-full">
+              <CardContent className="p-0">
+                <div className="relative w-full max-w-6xl">
+                  <div className="aspect-video w-full">
+                    <iframe 
+                      width="100%" 
+                      height="100%" 
+                      src="https://www.youtube.com/embed/ovUT2CXaokw?si=pUORw4kc_4_4IWNP" 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                      className="rounded-xl"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Our Vision Section */}
       <section className="relative section-cream">
         <svg
