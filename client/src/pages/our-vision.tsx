@@ -11,7 +11,7 @@ import {
   Rocket,
   Microscope,
   PlaneTakeoff,
-  MapPin,
+  Cat,
   Download,
   Shield
 } from "lucide-react";
@@ -147,8 +147,8 @@ export default function Vision() {
                 </div>
                 <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Multiplayer</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  Estuary agents are not only 1-on-1. Your companions can interact with you, other 
-                  agents, and your friends, forming a social network of multiple humans and agents.
+                  Companions can interact with you, other 
+                  agents, and your friends, forming deep social networks of multiple humans and agents.
                 </p>
               </CardContent>
             </Card>
@@ -158,10 +158,10 @@ export default function Vision() {
                 <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
                   <Globe className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Privacy-First</h3>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Spatially Intelligent</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  A world where AI can understand and assist without surveillance. Your conversations, 
-                  memories, and personal data remain yours alone, processed locally on your own devices.
+                  Your agents see, hear, and even interact with 
+                  the physical world, giving them an unparalled sense of presence and understanding of you.
                 </p>
               </CardContent>
             </Card>
@@ -169,12 +169,12 @@ export default function Vision() {
             <Card className="scroll-reveal bg-white/50 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-estuary-teal rounded-xl flex items-center justify-center mb-6">
-                  <Lightbulb className="h-8 w-8 text-white" />
+                  <Cat className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Embodied Intelligence</h3>
+                <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Embodied Avatars</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  AI that understands context, space, and human experience. Agents that can see, hear, 
-                  and interact with the world around them, making technology feel more natural and intuitive.
+                  Companions should not just be text or voice.  With Estuary, give your agents embodied,
+                  customizable, and interactive avatars.
                 </p>
               </CardContent>
             </Card>
