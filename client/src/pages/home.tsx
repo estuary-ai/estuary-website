@@ -510,7 +510,7 @@ export default function Home() {
               <div className="flex space-x-6 text-estuary-sage">
                 <a href="#" className="hover:text-estuary-teal transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-estuary-teal transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-estuary-teal transition-colors">Contact</a>
+                <a href="mailto:estuary.ai@gmail.com" className="hover:text-estuary-teal transition-colors">Contact</a>
               </div>
             </div>
             <div className="flex justify-end">
