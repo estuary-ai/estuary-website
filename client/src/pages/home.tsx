@@ -293,10 +293,10 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Ownership</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  While competing AI companion platforms still treat agents as cloud APIs, we treat
+                  While the big AI companies still treat agents as cloud APIs, we treat
                   them as living entities that grow with you. Your agents are not rented services.
-                  They'll keep working, even if we're no longer around.And of course, their personality
-                  and behavior will never change unless you change it.
+                  They'll keep working without us, and of course, their personality
+                  will never change unless you change it. 
                 </p>
               </CardContent>
             </Card>
@@ -474,8 +474,8 @@ export default function Home() {
                 <div className="text-left mt-6 text-estuary-sage">
                   <p className="font-semibold mb-2">Recommended System Specs:</p>
                   <ul className="list-disc list-inside">
-                    <li>OS: Windows 10+ or macOS 12+</li>
-                    <li>VRAM: 8GB+ (Windows) or 16GB+ unified memory (macOS)</li>
+                    <li>OS: Windows 10+ or macOS 12+ Monterey</li>
+                    <li>VRAM: 8GB+ (Windows) or 12GB+ unified memory (macOS)</li>
                     <li>CPU: x64 (Intel/AMD) or Apple Silicon (M1+)</li>
                     <li>Disk Space: 10GB+</li>
                   </ul>
