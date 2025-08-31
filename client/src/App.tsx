@@ -6,8 +6,6 @@ import { PasswordProtection } from "@/components/password-protection";
 import Home from "@/pages/home";
 import AboutUs from "@/pages/about-us";
 import NotFound from "@/pages/not-found";
-import { initGA } from "@/utils/analytics";
-import { usePageTracking } from "@/hooks/usePageTracking";
 
 function Router() {
   return (
@@ -21,14 +19,8 @@ function Router() {
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
-  
-  // Track page views
-  usePageTracking();
 
   useEffect(() => {
-    // Initialize Google Analytics
-    initGA();
-    
     // Check if user is already authenticated
     const authenticated = localStorage.getItem("estuary-authenticated") === "true";
     setIsAuthenticated(authenticated);
