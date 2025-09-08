@@ -475,7 +475,7 @@ export default function Home() {
                   <p className="font-semibold mb-2">Recommended System Specs:</p>
                   <ul className="list-disc list-inside">
                     <li>OS: Windows 10+ or macOS 12+ Monterey</li>
-                    <li>VRAM: 8GB+ (Windows) or 12GB+ unified memory (macOS)</li>
+                    <li>Memory: 8GB+</li>
                     <li>CPU: x64 (Intel/AMD) or Apple Silicon (M1+)</li>
                     <li>Disk Space: 10GB+</li>
                   </ul>
