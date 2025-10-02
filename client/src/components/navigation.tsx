@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { EstuaryLogoHeader } from "./logo";
-import { Menu, X, LogOut } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export function Navigation() {
@@ -22,10 +22,6 @@ export function Navigation() {
     }
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem("estuary-authenticated");
-    window.location.reload();
-  };
 
   const isHomePage = location === '/';
 
@@ -57,16 +53,6 @@ export function Navigation() {
             {/* <Link href="/team" className="text-estuary-text hover:text-estuary-teal transition-colors">
               About Us
             </Link> */}
-            
-            {/* Logout button */}
-            <button
-              onClick={handleLogout}
-              className="text-estuary-sage hover:text-estuary-teal transition-colors flex items-center space-x-1"
-              title="Logout"
-            >
-              <LogOut size={16} />
-              <span>Logout</span>
-            </button>
           </div>
           
           <button 
@@ -118,18 +104,6 @@ export function Navigation() {
               >
                 About Us
               </Link>
-              
-              {/* Mobile logout button */}
-              <button
-                onClick={() => {
-                  handleLogout();
-                  setMobileMenuOpen(false);
-                }}
-                className="text-estuary-sage hover:text-estuary-teal transition-colors text-left flex items-center space-x-2"
-              >
-                <LogOut size={16} />
-                <span>Logout</span>
-              </button>
             </div>
           </div>
         )}
