@@ -4,6 +4,7 @@ import { EstuaryLogo, EstuaryLogoHeader } from "@/components/logo";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { SignupForm } from "@/components/signup-form";
 import { 
   Shield, 
   Laptop, 
@@ -101,13 +102,13 @@ export default function Home() {
             Estuary
           </h1>
           <p className="text-xl md:text-2xl text-estuary-sage mb-8 font-light">
-            Platform for building private, embodied AI agents
+            Platform for building & running private AI companions
           </p>
           <p className="text-lg text-estuary-text mb-12 max-w-2xl mx-auto leading-relaxed">
-            Build and run AI companions and agents on your own device!
-            <br/> Total privacy. No rate limits. Get started now for free!
+            Your companions should be private, not a rented cloud service.
+            <br/> Run your AI on your device. Own it forever.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="relative">
               <Button 
                 size="lg"
@@ -130,6 +131,11 @@ export default function Home() {
             >
               Watch a Demo
             </Button>
+          </div> */}
+          
+          {/* Signup Form in Hero Section */}
+          <div className="mt-12 max-w-md mx-auto">
+            <SignupForm />
           </div>
         </div>
       </section>
@@ -501,7 +507,7 @@ export default function Home() {
         </svg>
         <div className="max-w-6xl mx-auto py-12 px-4">
           <div className="flex flex-col">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between items-center mb-8">
               <div className="flex items-center space-x-3 mb-6 md:mb-0">
                 <EstuaryLogoHeader />
                 <span className="text-xl font-medium font-fredoka text-estuary-text">Estuary</span>
@@ -510,10 +516,11 @@ export default function Home() {
               <div className="flex space-x-6 text-estuary-sage">
                 <a href="#" className="hover:text-estuary-teal transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-estuary-teal transition-colors">Terms of Service</a>
-                <a href="mailto:estuary.ai@gmail.com" className="hover:text-estuary-teal transition-colors">Contact</a>
+                <a href="mailto:spencer@estuary-ai.com" className="hover:text-estuary-teal transition-colors">Contact</a>
               </div>
             </div>
-            <div className="flex justify-end">
+
+            <div className="flex justify-end -mt-4">
               <a 
                 href="https://www.linkedin.com/company/estuary-agents/" 
                 target="_blank" 
@@ -523,6 +530,20 @@ export default function Home() {
                 <Linkedin className="h-4 w-4 text-white" />
               </a>
             </div>
+            
+            {/* Footer Signup Form */}
+            <div className="mb-8">
+              <div className="text-center mb-4">
+                <h3 className="text-lg font-medium text-estuary-text mb-2 font-fredoka">
+                  Join the waitlist!
+                </h3>
+              </div>
+              <div className="flex justify-center">
+                <SignupForm variant="footer" />
+              </div>
+            </div>
+            
+            
           </div>
           
           <div className="text-center mt-8 pt-8 border-t border-estuary-sage/20">
