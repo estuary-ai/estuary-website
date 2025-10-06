@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
-import { Mail, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 interface SignupFormProps {
   variant?: "default" | "footer";
@@ -95,13 +94,13 @@ export function SignupForm({ variant = "default", className = "" }: SignupFormPr
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 border-estuary-sage/30 focus:border-estuary-teal focus:ring-estuary-teal/20 !text-xl md:!text-lg"
+            className="flex-1 border-estuary-sage/30 focus:border-estuary-teal focus:ring-estuary-teal/20 md:!text-lg"
             required
             />
             <Button
             type="submit"
             disabled={isSubmitting}
-            className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-6 py-3 rounded-lg font-medium transition-all text-lg"
+            className="bg-estuary-teal hover:bg-estuary-teal-dark text-white px-6 py-3 rounded-lg font-medium transition-all text-md"
             >
             {isSubmitting ? "Signing up..." : "Join the Waitlist!"}
             </Button>

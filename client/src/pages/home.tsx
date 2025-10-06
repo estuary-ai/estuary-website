@@ -105,7 +105,7 @@ export default function Home() {
             Platform for building & running private AI companions
           </p>
           <p className="text-lg text-estuary-text mb-12 max-w-2xl mx-auto leading-relaxed">
-            Your companions should be private, not a rented cloud service.
+            Your companions should be yours, not a rented cloud service.
             <br/> Run your AI on your device. Own it forever.
           </p>
           {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
