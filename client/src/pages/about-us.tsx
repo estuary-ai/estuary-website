@@ -2,17 +2,11 @@ import { useEffect } from "react";
 import { Navigation } from "@/components/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Lightbulb, 
-  Telescope, 
   History,
   Sparkles,
-  Globe,
-  Users,
   Rocket,
   Microscope,
   PlaneTakeoff,
-  MapPin,
-  Shield
 } from "lucide-react";
 
 
@@ -51,8 +45,6 @@ export default function AboutUs() {
             <h2 className="text-4xl md:text-5xl font-medium text-estuary-text mb-6 font-fredoka">
               What's in a Name?
             </h2>
-            {/* <p className="text-xl text-estuary-sage max-w-3xl mx-auto">
-            </p> */}
           </div>
           
           <Card className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg">
@@ -63,10 +55,13 @@ export default function AboutUs() {
                     Where Rivers Meet the Ocean
                   </h3>
                   <p className="text-lg text-estuary-sage leading-relaxed mb-6">
-                    Just as an estuary is a place where rivers meet the sea, Estuary brings together the most advanced streams of AI research and innovations. Our platform is designed to build and power lifelike AI agents and companions, blending the latest breakthroughs into something truly alive.
+                    Several AI technologies (e.g. LLM, TTS, STT, etc.) go into building an AI companion. Estuary combines the most cutting-edge streams of AI research and innovations to power sci-fi-esque AI companions.
                   </p>
+                  <h3 className="text-3xl font-medium text-estuary-text mb-6 font-fredoka">
+                    The Ocean's Nursery
+                  </h3>
                   <p className="text-lg text-estuary-sage leading-relaxed">
-                    Estuaries are the cradle of life for nearly four-fifths of the ocean's fish and shellfish. At Estuary, we’re building advanced AI agents that evolve alongside you, keeping pace with every leap in AI technology. Just like the natural estuary, this is a protected refuge where your data and privacy are carefully safeguarded.
+                    Nearly all the ocean's fish raise their young in estuaries. At Estuary, we’re raising advanced AI agents that grow with you and each advancement in AI technology.  
                   </p>
                 </div>
               </div>
@@ -108,15 +103,15 @@ export default function AboutUs() {
                     <Rocket className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">NASA SUITS Challenge • 2022-2023</h3>
+                    <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">NASA • 2022-2023</h3>
                     <p className="text-lg text-estuary-sage leading-relaxed">
                       Estuary has its roots in the <a href="https://www.youtube.com/watch?v=d4mOWeIuvMI&ab_channel=StanleyLin" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">
                       NASA SUITS Challenge</a>, collaborating with NASA engineers and
-                      astronauts to build conversational AI agents integrated with AR heads-up-displays for 
-                      astronauts exploring martian and lunar terrain. Our early agents were able to ingest spatial
+                      astronauts to build spatially-intelligent conversational AI agents integrated with AR heads-up-displays for 
+                      martian/lunar exploration. Our early agents were able to ingest spatial
                       information and verbally respond in real-time to astronauts to boost safety, lessen cognitive
                       load, and improve situational awareness. Through building our system to work in the vacuum of 
-                      space with zero-internet, we developed the foundations of our off-cloud spatially-aware 
+                      space with zero-internet, we developed the foundations of our off-cloud 
                       conversational AI agent infrastructure.  
                     </p>
                   </div>
@@ -137,8 +132,9 @@ export default function AboutUs() {
                       their private information when interacting with AI. Undoubtedly, corporations would 
                       collect, sell, and train on our data. Hence, we decided to apply our learnings from 
                       NASA SUITS to develop Estuary as an open-source research platform to run off-cloud 
-                                                                    AI agents. We published at <a href="https://arxiv.org/abs/2504.14427" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Conference on Human Factors in Computing Systems (CHI'25)</a> and <a href="https://arxiv.org/abs/2410.20116" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Intelligent Virtual Agents (IVA'24)</a>, top conferences in the agents field. We also
-                                             won the <a href="https://devpost.com/software/paw-pals-connect" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Best Use of Apple Vision Pro Award</a> at MIT Reality Hack 2025.
+                      AI agents. We published at <a href="https://arxiv.org/abs/2504.14427" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Conference on Human Factors in Computing Systems (CHI'25)</a> 
+                      and <a href="https://arxiv.org/abs/2410.20116" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Intelligent Virtual Agents (IVA'24)</a>
+                      , top conferences in the agents field. We built a multiplayer prototype of Estuary and won the <a href="https://devpost.com/software/paw-pals-connect" target="_blank" rel="noopener noreferrer" className="text-estuary-teal hover:text-estuary-teal-dark underline">Best Use of Apple Vision Pro Award</a> at MIT Reality Hack 2025.
                     </p>
                   </div>
                 </div>
@@ -156,12 +152,12 @@ export default function AboutUs() {
                     <p className="text-lg text-estuary-sage leading-relaxed">
                       As we prepare to launch Estuary, we're excited to bring not only our vision 
                       to life, but a movement towards private, embodied AI agents and companions that
-                      we truly own.
+                      users truly own.
                       We are currently seeking investment to help us build this future, please reach out
                       if you interested in working with us.
-                      Similar to how the mainframe gave way to the personal computer, Estuary is 
+                      Like how the mainframe gave way to the personal computer, Estuary is 
                       bringing AI from the cloud and into our devices. You own your data, your device,
-                      your AI. Always.
+                      your AI.
                     </p>
                   </div>
                 </div>

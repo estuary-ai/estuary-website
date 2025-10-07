@@ -299,7 +299,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-medium text-estuary-text mb-4 font-fredoka">Ownership</h3>
                 <p className="text-estuary-sage leading-relaxed">
-                  While the big AI companies still treat agents as cloud APIs, we treat
+                  While competitors treat agents as cloud APIs, we treat
                   them as living entities that grow with you. Your agents are not rented services.
                   They'll keep working without us, and of course, their personality
                   will never change unless you change it. 
